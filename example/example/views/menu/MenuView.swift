@@ -24,6 +24,7 @@ struct MenuView: View {
                 ScrollView(.vertical, showsIndicators: false){
                     VStack(alignment: .leading){
                         Divider().background(Color(.white))
+                        //top Padding이라 Menu랑 오버랩됨
                             .padding(.top,100)
 //                        MenuModel(systemName: "person", title: "Profile")
 //                        MenuModel(systemName: "envelope", title: "Messages")

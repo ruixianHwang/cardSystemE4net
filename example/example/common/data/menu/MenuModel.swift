@@ -15,6 +15,7 @@ struct MenuModel :View{
     
     var body: some View {
         HStack {
+            // 이거는 여기화면에서만 변하는데 어차피 MenuView에서는 안 변하는데 무슨 의미가 있나..
             Image(systemName: systemName)
                 .foregroundColor(.white)
                 .imageScale(.large)

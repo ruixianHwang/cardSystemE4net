@@ -19,6 +19,10 @@
 		22EE4A8B295026DA009229C0 /* NavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A8A295026DA009229C0 /* NavModel.swift */; };
 		22EE4A8F29503915009229C0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A8E29503915009229C0 /* MenuModel.swift */; };
 		22EE4A9229503D93009229C0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A9129503D93009229C0 /* MenuItemView.swift */; };
+		22EE4A9429504463009229C0 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A9329504463009229C0 /* PageModel.swift */; };
+		22EE4A9629504556009229C0 /* Any1ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A9529504556009229C0 /* Any1ItemView.swift */; };
+		22EE4A982950458A009229C0 /* Any1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A972950458A009229C0 /* Any1Model.swift */; };
+		22EE4A9A295045AA009229C0 /* ResAny1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4A99295045AA009229C0 /* ResAny1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		22EE4A8A295026DA009229C0 /* NavModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavModel.swift; sourceTree = "<group>"; };
 		22EE4A8E29503915009229C0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		22EE4A9129503D93009229C0 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		22EE4A9329504463009229C0 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		22EE4A9529504556009229C0 /* Any1ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Any1ItemView.swift; sourceTree = "<group>"; };
+		22EE4A972950458A009229C0 /* Any1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Any1Model.swift; sourceTree = "<group>"; };
+		22EE4A99295045AA009229C0 /* ResAny1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResAny1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 		22EE4A852950261D009229C0 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				22EE4A9329504463009229C0 /* PageModel.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 		22EE4A8629502625009229C0 /* response */ = {
 			isa = PBXGroup;
 			children = (
+				22EE4A99295045AA009229C0 /* ResAny1.swift */,
 			);
 			path = response;
 			sourceTree = "<group>";
@@ -191,6 +201,7 @@
 		22EE4A892950263B009229C0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				22EE4A972950458A009229C0 /* Any1Model.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				22EE4A9129503D93009229C0 /* MenuItemView.swift */,
+				22EE4A9529504556009229C0 /* Any1ItemView.swift */,
 			);
 			path = contents;
 			sourceTree = "<group>";
@@ -281,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EE4A9429504463009229C0 /* PageModel.swift in Sources */,
 				22EE4A81295024C1009229C0 /* MenuView.swift in Sources */,
 				22EE4A74295002D9009229C0 /* NavView.swift in Sources */,
+				22EE4A982950458A009229C0 /* Any1Model.swift in Sources */,
 				22EE4A8F29503915009229C0 /* MenuModel.swift in Sources */,
+				22EE4A9629504556009229C0 /* Any1ItemView.swift in Sources */,
 				22EE4A7C295021D3009229C0 /* Any1View.swift in Sources */,
 				22EE4A9229503D93009229C0 /* MenuItemView.swift in Sources */,
 				22EE4A78295003F5009229C0 /* MainView.swift in Sources */,
@@ -291,6 +306,7 @@
 				22EE4A6529500132009229C0 /* exampleApp.swift in Sources */,
 				22EE4A7E295021DC009229C0 /* Any2View.swift in Sources */,
 				22EE4A8B295026DA009229C0 /* NavModel.swift in Sources */,
+				22EE4A9A295045AA009229C0 /* ResAny1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +444,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +473,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
