@@ -16,7 +16,7 @@ struct MenuView: View {
         MenuModel(systemName: "person", title: "Profile"),
         MenuModel(systemName: "envelope", title: "Messages"),
         MenuModel(systemName: "gear", title: "setting")
-    ]
+    ] 
 
     var body: some View {
         NavigationView{
