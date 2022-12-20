@@ -13,11 +13,27 @@ struct Any1ItemView: View {
     let item: Any1Model
     
     var body: some View {
-        VStack{
-            //이렇게 쓰려고 Any1Model에서 identifiable써줬나
-            Text(item.id)
-            Text(item.label)
+        ZStack(alignment: .center){
+            Button(action: {
+                print("itme.label : \(item.label)  item.id: \(item.id)")
+            }){
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(Color.white)
+                    .overlay(
+                        VStack{
+                            //이렇게 쓰려고 Any1Model에서 identifiable써줬나
+                            Text(item.id)
+                                .font(.system(size: 12))
+                                .foregroundColor(.black)
+                                .padding(.bottom, 10)
+                            Text(item.label)
+                                .foregroundColor(.black)
+                        }
+                    )
+                    .shadow(color: .gray, radius: 2, x: CGFloat(2), y: CGFloat(2))
+            }
         }
+        .frame(height:72)
     }
 }
 
@@ -26,3 +42,5 @@ struct Any1ItemView_Previews: PreviewProvider {
         Any1ItemView(item: Any1Model(id:"", label: ""))
     }
 }
+
+// swiftUI => mvvm 패턴 써보기

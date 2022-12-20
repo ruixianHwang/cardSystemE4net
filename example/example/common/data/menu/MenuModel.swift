@@ -2,10 +2,9 @@
 //  MenuModel.swift
 //  example
 //
-//  Created by net e4 on 2022/12/19.
+//  Created by net e4 on 2022/12/20.
 //
 
-import Foundation
 import SwiftUI
 
 struct MenuModel :View{
@@ -26,7 +25,6 @@ struct MenuModel :View{
         .padding(.leading, 10)
         Divider().background(Color(.white))
     }
-    
 }
 
 struct MenuModel_Previews: PreviewProvider {

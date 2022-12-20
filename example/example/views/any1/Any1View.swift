@@ -21,6 +21,7 @@ struct Any1View: View {
         //구글링 할 때도 http libarary in swift => 여러개 검색 적어도 3개는 보자
         //중요한거는 통신을 어떻게 하느냐, 클래스 하나 가지고 어떻게 유용하게 다 쓸수 있는지 재사용 가능하게 코드를 작성하자.
         
+        //우선 GeometryReader는 그 자체로 ‘View’이며, container 안 View 스스로의 크기와 위치를 함수로 정의한다고 소개되어있다.
         //GeometryReader 라는 struct에 클로저로 geometry 라는 함수를 받으면
         GeometryReader { geometry in
             //let으로 columns라는 변수명에 [GridItem]형으로 [GridItem()]생성해서
@@ -66,22 +67,22 @@ struct Any1View: View {
     
     func loadItems(){
         print("loadItems")
-        //안드로이드의 retrofit 역할을 함
-        //        HttpClient<ResAny1>().alamofireNetworking(
-        //            url: URLInfo.getItemListUrl(currentPage: pageModel.current),
-        //            onSuccess: { (resData) in
-        //                print("resData : \(resData)")
-        //                pageModel.hasMorePages = resData.hasMorePages
-        //                let loadItems = resData.items
-        //                loadItems.forEach{ loadItem in
-        //                    print("loadItem : \(loadItem)")
-        //                    any1ItemList.append(loadItem)
-        //                }
-        //            },
-        //            onFailure: {
-        //                showingAlert = true
-        //            }
-        //        )
+//        안드로이드의 retrofit 역할을 함
+                HttpClient<ResAny1>().alamofireNetworking(
+                    url: URLInfo.getAny1ListUrl(currentPage: pageModel.current),
+                    onSuccess: { (resData) in
+                        print("resData : \(resData)")
+                        pageModel.hasMorePages = resData.hasMorePages
+                        let loadItems = resData.items
+                        loadItems.forEach{ loadItem in
+                            print("loadItem : \(loadItem)")
+                            any1ItemList.append(loadItem)
+                        }
+                    },
+                    onFailure: {
+                        showingAlert = true
+                    }
+                )
     }
 }
 struct Any1View_Previews: PreviewProvider {
